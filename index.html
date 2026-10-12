@@ -18,8 +18,8 @@
   <meta name="geo.position" content="25.269316;82.843700" />
   <meta name="ICBM" content="25.269316, 82.843700" />
 
-  <!-- Clean Tooth SVG Favicon (Matches Navbar Logo) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='toothGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230052CC'/%3E%3Cstop offset='100%25' stop-color='%23E11D48'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23toothGrad)'/%3E%3Cpath fill='%23ffffff' d='M32 13c-7.5 0-13.2 4.8-15 11.5-.7 2.7-1.5 6-2.3 9.6-1.5 7.1-3 14.5-3 17 0 4.8 3.5 7.9 7 7.9 3.8 0 6.6-3.5 8.1-8.5 1-3.2 2-7.5 3-11.5h4.4c1 4 2 8.3 3 11.5 1.5 5 4.3 8.5 8.1 8.5 3.5 0 7-3.1 7-7.9 0-2.5-1.5-9.9-3-17-.8-3.6-1.6-6.9-2.3-9.6-1.8-6.7-7.5-11.5-15-11.5z'/%3E%3C/svg%3E">
+  <!-- Clean Tooth SVG Favicon (#00bcff to #7ccf00 Gradient) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='toothGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300bcff'/%3E%3Cstop offset='100%25' stop-color='%237ccf00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23toothGrad)'/%3E%3Cpath fill='%23ffffff' d='M32 13c-7.5 0-13.2 4.8-15 11.5-.7 2.7-1.5 6-2.3 9.6-1.5 7.1-3 14.5-3 17 0 4.8 3.5 7.9 7 7.9 3.8 0 6.6-3.5 8.1-8.5 1-3.2 2-7.5 3-11.5h4.4c1 4 2 8.3 3 11.5 1.5 5 4.3 8.5 8.1 8.5 3.5 0 7-3.1 7-7.9 0-2.5-1.5-9.9-3-17-.8-3.6-1.6-6.9-2.3-9.6-1.8-6.7-7.5-11.5-15-11.5z'/%3E%3C/svg%3E">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
@@ -40,13 +40,13 @@
       theme: {
         extend: {
           colors: {
-            brandBlue: '#0052CC',
-            brandBlueDark: '#07204A',
-            brandBlueLight: '#2684FF',
-            brandRed: '#E11D48',
-            brandRedHover: '#BE123C',
-            brandTeal: '#0D9488',
-            accentIce: '#E0F2FE',
+            brandBlue: '#00bcff',
+            brandBlueDark: '#0084b4',
+            brandBlueLight: '#5cd5ff',
+            brandRed: '#7ccf00',
+            brandRedHover: '#6bb800',
+            brandTeal: '#00c7be',
+            accentIce: '#E0F8FF',
             darkBase: '#080E1A',
           },
           fontFamily: {
@@ -167,11 +167,11 @@
       background: #f1f5f9;
     }
     ::-webkit-scrollbar-thumb {
-      background: #0052CC;
+      background: #00bcff;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #E11D48;
+      background: #7ccf00;
     }
 
     *, *::before, *::after {
@@ -254,18 +254,18 @@
       pointer-events: none;
       opacity: 0.9;
       background:
-        radial-gradient(circle at 100% 0%, rgba(38,132,255,0.12), transparent 45%),
-        radial-gradient(circle at 0% 100%, rgba(225,29,72,0.08), transparent 45%),
-        linear-gradient(145deg, rgba(255,255,255,0.99), rgba(240,247,255,0.97));
+        radial-gradient(circle at 100% 0%, rgba(0,188,255,0.12), transparent 45%),
+        radial-gradient(circle at 0% 100%, rgba(124,207,0,0.10), transparent 45%),
+        linear-gradient(145deg, rgba(255,255,255,0.99), rgba(240,250,255,0.97));
     }
 
     .service-gradient-card:nth-child(even)::before,
     .equip-gradient-card:nth-child(even)::before,
     .why-gradient-card:nth-child(even)::before {
       background:
-        radial-gradient(circle at 100% 0%, rgba(225,29,72,0.12), transparent 45%),
-        radial-gradient(circle at 0% 100%, rgba(13,148,136,0.09), transparent 45%),
-        linear-gradient(145deg, rgba(255,255,255,0.99), rgba(255,241,242,0.95));
+        radial-gradient(circle at 100% 0%, rgba(124,207,0,0.14), transparent 45%),
+        radial-gradient(circle at 0% 100%, rgba(0,188,255,0.10), transparent 45%),
+        linear-gradient(145deg, rgba(255,255,255,0.99), rgba(244,255,235,0.95));
     }
 
     .service-gradient-card:hover,
@@ -273,7 +273,7 @@
     .equip-gradient-card:hover,
     .why-gradient-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 25px -5px rgba(0, 82, 204, 0.12), 0 8px 10px -6px rgba(0, 82, 204, 0.08);
+      box-shadow: 0 20px 25px -5px rgba(0, 188, 255, 0.16), 0 8px 10px -6px rgba(124, 207, 0, 0.12);
     }
 
     @media (max-width: 767px) {
@@ -285,20 +285,20 @@
   </style>
 </head>
 
-<body class="bg-gradient-to-br from-slate-50 via-sky-50/40 to-slate-100 text-slate-800 antialiased font-sans selection:bg-brandRed selection:text-white">
+<body class="bg-gradient-to-br from-slate-50 via-sky-50/40 to-slate-100 text-slate-800 antialiased font-sans selection:bg-brandRed selection:text-slate-900">
 
   <!-- ================= TOP READING PROGRESS BAR ================= -->
   <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brandBlue via-brandTeal to-brandRed z-[100] transition-all duration-150 w-0"></div>
 
-  <!-- ================= HERO VIEWPORT WRAPPER (Strict 100vh on Desktop, Fluid on Mobile) ================= -->
-  <div class="hero-viewport-wrap min-h-screen lg:h-screen w-full flex flex-col justify-between relative bg-[radial-gradient(circle_at_12%_18%,rgba(0,82,204,0.14),transparent_40%),radial-gradient(circle_at_88%_30%,rgba(225,29,72,0.12),transparent_38%),linear-gradient(135deg,#ffffff_0%,#f0f7ff_48%,#f8fafc_100%)]">
+  <!-- ================= HERO VIEWPORT WRAPPER ================= -->
+  <div class="hero-viewport-wrap min-h-screen lg:h-screen w-full flex flex-col justify-between relative bg-[radial-gradient(circle_at_12%_18%,rgba(0,188,255,0.16),transparent_40%),radial-gradient(circle_at_88%_30%,rgba(124,207,0,0.15),transparent_38%),linear-gradient(135deg,#ffffff_0%,#f0faff_48%,#f6fdf0_100%)]">
     
     <!-- Background Grid Pattern -->
-    <div class="absolute inset-0 pointer-events-none opacity-[0.25] bg-[linear-gradient(rgba(0,82,204,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,82,204,0.05)_1px,transparent_1px)] bg-[size:36px_36px]"></div>
+    <div class="absolute inset-0 pointer-events-none opacity-[0.25] bg-[linear-gradient(rgba(0,188,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,188,255,0.08)_1px,transparent_1px)] bg-[size:36px_36px]"></div>
 
     <!-- Ambient Glowing Orbs -->
-    <div class="absolute -top-20 -left-20 w-80 h-80 bg-brandBlue/15 rounded-full blur-3xl pointer-events-none animate-glow-pulse"></div>
-    <div class="absolute top-1/3 -right-20 w-80 h-80 bg-brandRed/15 rounded-full blur-3xl pointer-events-none animate-glow-pulse" style="animation-delay: 1.8s;"></div>
+    <div class="absolute -top-20 -left-20 w-80 h-80 bg-brandBlue/20 rounded-full blur-3xl pointer-events-none animate-glow-pulse"></div>
+    <div class="absolute top-1/3 -right-20 w-80 h-80 bg-brandRed/20 rounded-full blur-3xl pointer-events-none animate-glow-pulse" style="animation-delay: 1.8s;"></div>
 
     <!-- ================= 1. NAVBAR ================= -->
     <header id="main-nav" class="w-full shrink-0 z-[90] glass-nav border-b border-slate-200/80 shadow-sm transition-all duration-300">
@@ -306,12 +306,12 @@
         
         <!-- Clinic Logo -->
         <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-brandBlue to-brandRed flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-white shadow-md shadow-brandBlue/20">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-brandBlue to-brandRed flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-white shadow-md shadow-brandBlue/25">
             <i class="fa-solid fa-tooth text-xl"></i>
           </div>
           <div>
-            <div class="text-base sm:text-xl lg:text-2xl font-black tracking-tight leading-none text-slate-900 group-hover:text-brandBlue transition-colors">
-              CARE <span class="text-brandRed">DENTAL CLINIC</span>
+            <div class="text-base sm:text-xl lg:text-2xl font-black tracking-tight leading-none text-slate-900 group-hover:text-brandBlueDark transition-colors">
+              CARE <span class="text-brandBlueDark">DENTAL</span> <span class="text-[#65ab00]">CLINIC</span>
             </div>
             <p class="text-[8px] sm:text-[10px] tracking-wider text-slate-500 font-extrabold uppercase mt-0.5">
               Multispeciality Dental Care • Rajatalab
@@ -321,22 +321,22 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden xl:flex items-center gap-6 font-extrabold text-sm text-slate-700">
-          <a href="#home" class="text-brandRed relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brandRed transition-all">HOME</a>
-          <a href="#about" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">ABOUT</a>
-          <a href="#doctor" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">DIRECTOR</a>
-          <a href="#services" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">TREATMENTS</a>
-          <a href="#facilities" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">FACILITIES</a>
-          <a href="#gallery" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">GALLERY</a>
-          <a href="#contact" class="hover:text-brandBlue hover:-translate-y-0.5 transition-all py-1">CONTACT</a>
+          <a href="#home" class="text-brandBlueDark relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brandBlueDark transition-all">HOME</a>
+          <a href="#about" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">ABOUT</a>
+          <a href="#doctor" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">DIRECTOR</a>
+          <a href="#services" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">TREATMENTS</a>
+          <a href="#facilities" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">FACILITIES</a>
+          <a href="#gallery" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">GALLERY</a>
+          <a href="#contact" class="hover:text-brandBlueDark hover:-translate-y-0.5 transition-all py-1">CONTACT</a>
         </nav>
 
         <!-- Right Quick Actions -->
         <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:8853739586" class="hidden md:flex items-center gap-1.5 text-sm font-black text-slate-700 hover:text-brandBlue transition-colors bg-white/80 px-3 py-1.5 rounded-full border border-slate-200 hover:border-brandBlue hover:shadow-sm">
-            <i class="fa-solid fa-phone text-brandRed animate-pulse"></i>
+          <a href="tel:8853739586" class="hidden md:flex items-center gap-1.5 text-sm font-black text-slate-700 hover:text-brandBlueDark transition-colors bg-white/80 px-3 py-1.5 rounded-full border border-slate-200 hover:border-brandBlue hover:shadow-sm">
+            <i class="fa-solid fa-phone text-[#65ab00] animate-pulse"></i>
             <span>8853739586</span>
           </a>
-          <a href="#contact" class="btn-shimmer flex items-center gap-2 bg-brandRed hover:bg-brandRedHover text-white px-5 py-2 rounded-full font-bold text-xs sm:text-sm shadow-lg shadow-brandRed/25 hover:shadow-brandRed/45 hover:scale-105 active:scale-95 transition-all">
+          <a href="#contact" class="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-brandBlue to-[#009fd9] hover:from-[#00aee8] hover:to-brandBlue text-white px-5 py-2 rounded-full font-bold text-xs sm:text-sm shadow-lg shadow-brandBlue/30 hover:scale-105 active:scale-95 transition-all">
             <i class="fa-regular fa-calendar-check text-sm"></i>
             <span>Book Appointment</span>
           </a>
@@ -350,15 +350,15 @@
 
       <!-- Mobile Dropdown Menu -->
       <div id="mobile-menu" class="hidden xl:hidden bg-white/98 border-b border-slate-200 px-6 py-4 shadow-2xl space-y-3">
-        <a href="#home" class="mobile-nav-link block font-semibold text-brandRed">Home</a>
-        <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">About</a>
-        <a href="#doctor" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Director</a>
-        <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Treatments</a>
-        <a href="#facilities" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Facilities</a>
-        <a href="#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Clinic Gallery</a>
-        <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlue">Contact</a>
+        <a href="#home" class="mobile-nav-link block font-semibold text-brandBlueDark">Home</a>
+        <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">About</a>
+        <a href="#doctor" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">Director</a>
+        <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">Treatments</a>
+        <a href="#facilities" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">Facilities</a>
+        <a href="#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">Clinic Gallery</a>
+        <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-brandBlueDark">Contact</a>
         <div class="pt-2">
-          <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-brandRed text-white py-2.5 rounded-full font-bold text-sm shadow-md">
+          <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-gradient-to-r from-brandBlue to-brandRed text-slate-900 py-2.5 rounded-full font-extrabold text-sm shadow-md">
             <i class="fa-regular fa-calendar-check"></i> Book Appointment
           </a>
         </div>
@@ -373,33 +373,33 @@
         
         <!-- Top Badges -->
         <div class="flex flex-wrap items-center gap-2 pt-1">
-          <div class="inline-flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 text-emerald-800 px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm shimmer-badge transition-transform hover:scale-105">
-            <i class="fa-solid fa-certificate text-emerald-600"></i>
+          <div class="inline-flex items-center gap-1.5 bg-lime-50 hover:bg-lime-100 border border-lime-300 text-lime-900 px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm shimmer-badge transition-transform hover:scale-105">
+            <i class="fa-solid fa-certificate text-brandRed"></i>
             <span>REGD. NO: A-12063</span>
           </div>
-          <div class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm transition-transform hover:scale-105">
+          <div class="inline-flex items-center gap-1.5 bg-sky-50 hover:bg-sky-100 border border-sky-300 text-sky-950 px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm transition-transform hover:scale-105">
             <i class="fa-solid fa-star text-amber-500 animate-pulse"></i>
             <span>5.0 GOOGLE RATED CLINIC</span>
           </div>
-          <div class="inline-flex items-center gap-1.5 bg-sky-50 hover:bg-sky-100 border border-sky-300 text-brandBlue px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm transition-transform hover:scale-105">
+          <div class="inline-flex items-center gap-1.5 bg-cyan-50 hover:bg-cyan-100 border border-cyan-300 text-brandBlueDark px-3 py-1 rounded-full text-[11px] sm:text-xs font-black tracking-wide shadow-sm transition-transform hover:scale-105">
             <i class="fa-solid fa-clock text-brandBlue"></i>
             <span>OPEN TUE–SUN (MON CLOSED)</span>
           </div>
         </div>
 
-        <!-- Dynamic Two-Color Headline -->
+        <!-- Headline -->
         <div>
           <h1 class="text-4xl sm:text-5xl lg:text-[3.9rem] xl:text-[4.3rem] leading-[1.05] tracking-tight">
-            <span class="font-cursive text-brandBlue font-bold flex items-center gap-3 pt-2 pb-2 group cursor-default">
+            <span class="font-cursive text-brandBlueDark font-bold flex items-center gap-3 pt-2 pb-2 group cursor-default">
               Smile with Pride
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgb(225 29 72)" stroke-width="2.2" stroke-linecap="round" class="w-[42px] h-[42px] sm:w-[54px] sm:h-[54px] lg:w-[62px] lg:h-[62px] shrink-0 group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7ccf00" stroke-width="2.5" stroke-linecap="round" class="w-[42px] h-[42px] sm:w-[54px] sm:h-[54px] lg:w-[62px] lg:h-[62px] shrink-0 group-hover:scale-110 transition-transform">
                 <path d="M5 12c1.5 4 4 6 7 6s5.5-2 7-6"></path>
                 <path d="M8 9h.01"></path>
                 <path d="M16 9h.01"></path>
               </svg>
             </span>
             <span class="font-sans font-black text-slate-900 text-lg sm:text-xl lg:text-[1.65rem] block mt-1 tracking-tight">
-              Advanced Dental Surgery, <span class="text-brandRed"> Precision RCT</span> & <span class="text-brandBlue">Implants</span>
+              Advanced Dental Surgery, <span class="text-[#65ab00]"> Precision RCT</span> & <span class="text-brandBlueDark">Implants</span>
             </span>
           </h1>
 
@@ -407,15 +407,15 @@
             Welcome to <strong>Care Dental Clinic</strong> in Rajatalab, Varanasi. Providing ethical, gentle, and modern dental solutions: Perfect RCTs, Fixed Teeth Replacements, Surgical Extractions, Cosmetic Smile Design & Complete Family Dental Care.
           </p>
 
-          <!-- CTA Buttons with Micro-Interactions -->
+          <!-- CTA Buttons -->
           <div class="flex flex-wrap items-center gap-3 mt-3">
-            <a href="#contact" class="btn-shimmer inline-flex items-center gap-2.5 bg-brandRed hover:bg-brandRedHover text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-xl shadow-brandRed/25 hover:shadow-brandRed/45 hover:scale-105 active:scale-95 transition-all group">
+            <a href="#contact" class="btn-shimmer inline-flex items-center gap-2.5 bg-gradient-to-r from-brandBlue to-[#009fd9] hover:from-[#00aee8] hover:to-brandBlue text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-xl shadow-brandBlue/30 hover:scale-105 active:scale-95 transition-all group">
               <i class="fa-regular fa-calendar-days text-sm"></i>
               <span>Book Consultation</span>
               <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
             </a>
-            <a href="tel:8853739586" class="inline-flex items-center gap-2 bg-white hover:bg-sky-50 text-slate-800 hover:text-brandBlue border border-slate-300 hover:border-brandBlue px-4 sm:px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-sm hover:shadow transition-all hover:scale-105">
-              <i class="fa-solid fa-phone text-brandBlue"></i>
+            <a href="tel:8853739586" class="inline-flex items-center gap-2 bg-white hover:bg-sky-50 text-slate-800 hover:text-brandBlueDark border border-slate-300 hover:border-brandBlue px-4 sm:px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-sm hover:shadow transition-all hover:scale-105">
+              <i class="fa-solid fa-phone text-[#65ab00]"></i>
               <span>Call: 8853739586</span>
             </a>
           </div>
@@ -429,19 +429,19 @@
                 <img src="Images/3.png" alt="Dr. Mohd Yunus" class="w-full h-full object-cover" />
               </div>
               <div>
-                <h2 class="text-xs sm:text-sm font-black text-brandBlue leading-tight group-hover:text-brandRed transition-colors">Dr. MOHD. YUNUS</h2>
+                <h2 class="text-xs sm:text-sm font-black text-brandBlueDark leading-tight group-hover:text-[#65ab00] transition-colors">Dr. MOHD. YUNUS</h2>
                 <p class="text-[11px] sm:text-xs font-bold text-slate-800">Dental Surgeon • BDS (Manipal), FAGE (Manipal)</p>
                 <p class="text-[10px] text-slate-500 font-semibold">Regd. No.: A-12063 • Premier Manipal Alumnus</p>
               </div>
             </div>
-            <div class="w-8 h-8 rounded-full border-2 border-brandRed bg-red-50 flex items-center justify-center text-brandRed shrink-0 shadow-sm animate-pulse">
-             <i class="fa-solid fa-award text-xs"></i>
+            <div class="w-8 h-8 rounded-full border-2 border-brandRed bg-lime-50 flex items-center justify-center text-brandRed shrink-0 shadow-sm animate-pulse">
+             <i class="fa-solid fa-award text-xs text-[#65ab00]"></i>
             </div>
           </div>
 
           <!-- Address Line with Map Pin -->
-          <div class="inline-flex items-center gap-2 bg-sky-50/90 border border-sky-200 text-brandBlue px-3.5 py-2 rounded-full max-w-full w-fit text-[11px] sm:text-xs font-bold tracking-wide shadow-sm hover:shadow hover:bg-sky-100 transition-all">
-            <i class="fa-solid fa-location-dot text-brandRed text-sm shrink-0 animate-bounce"></i>
+          <div class="inline-flex items-center gap-2 bg-sky-50/90 border border-sky-200 text-brandBlueDark px-3.5 py-2 rounded-full max-w-full w-fit text-[11px] sm:text-xs font-bold tracking-wide shadow-sm hover:shadow hover:bg-sky-100 transition-all">
+            <i class="fa-solid fa-location-dot text-[#65ab00] text-sm shrink-0 animate-bounce"></i>
             <span class="break-words">Vanshika Katra, Rajatalab (Jansa Road), Varanasi – 221311</span>
           </div>
         </div>
@@ -451,9 +451,9 @@
       <!-- Right Column: Visual Sliding Dental Showcase Container -->
       <div class="w-full h-[260px] sm:h-[340px] lg:h-full relative flex items-center justify-end overflow-hidden lg:overflow-visible min-w-0">
         
-        <!-- Outer Decorative Rings -->
-        <div class="hidden lg:block absolute -right-4 w-[104%] h-[98%] rounded-l-[320px] border-4 border-rose-300/40 -z-0 translate-x-2"></div>
-        <div class="hidden lg:block absolute -right-2 w-[104%] h-[98%] rounded-l-[320px] bg-gradient-to-r from-sky-400/20 via-rose-300/15 to-red-400/15 blur-xl -z-0"></div>
+        <!-- Outer Decorative Rings (#00bcff & #7ccf00) -->
+        <div class="hidden lg:block absolute -right-4 w-[104%] h-[98%] rounded-l-[320px] border-4 border-lime-300/40 -z-0 translate-x-2"></div>
+        <div class="hidden lg:block absolute -right-2 w-[104%] h-[98%] rounded-l-[320px] bg-gradient-to-r from-cyan-400/20 via-sky-300/15 to-lime-300/20 blur-xl -z-0"></div>
 
         <!-- Masked Hero Image Slider Container -->
         <div class="w-full lg:w-[100%] h-full rounded-2xl lg:rounded-none lg:rounded-l-[300px] overflow-hidden relative shadow-2xl border-2 sm:border-4 border-white z-10 bg-slate-900 group">
@@ -485,11 +485,11 @@
             <img src="Images/29.png" alt="Sterilized Clinical Space" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700" />
           </div>
 
-          <!-- Active Operatory Indicator Badge with Ping Animation -->
+          <!-- Active Operatory Indicator Badge -->
           <div class="absolute top-4 right-4 sm:top-5 sm:right-6 z-20 glass-card px-3 py-1 rounded-full shadow-lg flex items-center gap-2 border border-white/80 animate-float-soft">
             <span class="relative flex h-2.5 w-2.5">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandRed opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brandRed"></span>
             </span>
             <span class="text-[10px] sm:text-[11px] font-black text-slate-800 tracking-wide">10+ Yrs Experience</span>
           </div>
@@ -501,47 +501,47 @@
     </main>
 
     <!-- ================= 3. STATS STRIP ================= -->
-    <div class="w-full bg-gradient-to-r from-brandBlueDark via-brandBlue to-brandRed py-2.5 sm:py-3 shadow-2xl z-20 border-t border-white/10 shrink-0">
+    <div class="w-full bg-gradient-to-r from-brandBlueDark via-brandBlue to-[#56aa00] py-2.5 sm:py-3 shadow-2xl z-20 border-t border-white/20 shrink-0">
       <div class="max-w-[1600px] mx-auto px-2 sm:px-6">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-1 sm:gap-4 items-center">
           
-          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 border-r border-white/15">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
+          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 border-r border-white/20">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-graduation-cap text-xs sm:text-sm"></i>
             </div>
             <div class="min-w-0">
               <div class="text-sm sm:text-base xl:text-lg font-black text-white leading-none tracking-tight">Manipal Alumnus</div>
-              <div class="text-[10px] sm:text-xs text-sky-100 font-medium mt-0.5 truncate">BDS, FAGE (Manipal)</div>
+              <div class="text-[10px] sm:text-xs text-cyan-100 font-medium mt-0.5 truncate">BDS, FAGE (Manipal)</div>
             </div>
           </div>
 
-          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 lg:border-r border-white/15">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
-              <i class="fa-solid fa-star text-xs sm:text-sm text-amber-300"></i>
+          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 lg:border-r border-white/20">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
+              <i class="fa-solid fa-star text-xs sm:text-sm text-yellow-300"></i>
             </div>
             <div class="min-w-0">
               <div class="text-sm sm:text-base xl:text-lg font-black text-white leading-none tracking-tight">5.0 Google Rating</div>
-              <div class="text-[10px] sm:text-xs text-sky-100 font-medium mt-0.5 truncate">Top Patient Feedback</div>
+              <div class="text-[10px] sm:text-xs text-cyan-100 font-medium mt-0.5 truncate">Top Patient Feedback</div>
             </div>
           </div>
 
-          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 border-r border-white/15">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
+          <div class="flex items-center justify-center gap-2 sm:gap-3 px-2 border-r border-white/20">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-shield-halved text-xs sm:text-sm"></i>
             </div>
             <div class="min-w-0">
               <div class="text-sm sm:text-base xl:text-lg font-black text-white leading-none tracking-tight">100%</div>
-              <div class="text-[10px] sm:text-xs text-rose-100 font-medium mt-0.5 truncate">Patient Satisfaction</div>
+              <div class="text-[10px] sm:text-xs text-lime-100 font-medium mt-0.5 truncate">Patient Satisfaction</div>
             </div>
           </div>
 
           <div class="flex items-center justify-center gap-2 sm:gap-3 px-2">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shrink-0 text-white shadow-inner">
               <i class="fa-solid fa-clock text-xs sm:text-sm"></i>
             </div>
             <div class="min-w-0">
               <div class="text-sm sm:text-base xl:text-lg font-black text-white leading-none tracking-tight">Morning & Evening</div>
-              <div class="text-[10px] sm:text-xs text-rose-100 font-medium mt-0.5 truncate">Tue–Sun Consultations</div>
+              <div class="text-[10px] sm:text-xs text-lime-100 font-medium mt-0.5 truncate">Tue–Sun Consultations</div>
             </div>
           </div>
 
@@ -552,19 +552,19 @@
   </div>
 
   <!-- ================= 4. ABOUT US SECTION ================= -->
-  <section id="about" class="py-20 bg-gradient-to-b from-[#edf5fd] via-[#e5f0fa] to-[#f0f6fc] relative border-b border-sky-100">
+  <section id="about" class="py-20 bg-gradient-to-b from-[#edf8fd] via-[#e5f4fa] to-[#f0fafc] relative border-b border-sky-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left Content -->
         <div class="lg:col-span-7 space-y-6 reveal">
-          <div class="inline-flex items-center gap-2 bg-red-100 text-brandRed border border-red-200 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-sm">
-            <i class="fa-solid fa-hospital"></i> About Care Dental Clinic
+          <div class="inline-flex items-center gap-2 bg-lime-100 text-lime-900 border border-lime-300 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-sm">
+            <i class="fa-solid fa-hospital text-brandRed"></i> About Care Dental Clinic
           </div>
 
           <h2 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
-            High-Standard Dental Healthcare & <span class="text-brandBlue">Painless Treatments</span> in Rajatalab
+            High-Standard Dental Healthcare & <span class="text-brandBlueDark">Painless Treatments</span> in Rajatalab
           </h2>
 
           <p class="text-slate-600 leading-relaxed font-normal text-base">
@@ -577,11 +577,11 @@
 
           <!-- Timings Chips -->
           <div class="flex flex-wrap gap-2 pt-1">
-            <div class="inline-flex items-center gap-2 bg-white border border-sky-200 text-brandBlue px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
+            <div class="inline-flex items-center gap-2 bg-white border border-sky-200 text-brandBlueDark px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
               <i class="fa-solid fa-clock text-brandBlue"></i>
               <span>MORNING: 09:30 AM – 01:30 PM</span>
             </div>
-            <div class="inline-flex items-center gap-2 bg-white border border-sky-200 text-brandRed px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
+            <div class="inline-flex items-center gap-2 bg-white border border-lime-300 text-lime-900 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
               <i class="fa-solid fa-clock text-brandRed"></i>
               <span>EVENING: 04:00 PM – 06:00 PM</span>
             </div>
@@ -594,8 +594,8 @@
           <!-- Highlight Box -->
           <div class="bg-white border-l-4 border-brandRed rounded-xl p-5 shadow-md border border-slate-200/80">
             <div class="flex items-start gap-4">
-              <div class="w-11 h-11 rounded-xl bg-brandRed/10 text-brandRed flex items-center justify-center shrink-0">
-                <i class="fa-solid fa-hand-holding-medical text-xl"></i>
+              <div class="w-11 h-11 rounded-xl bg-lime-100 text-lime-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-hand-holding-medical text-xl text-brandRed"></i>
               </div>
               <div>
                 <h4 class="font-black text-slate-900 text-base">Patient-First, Budget-Friendly Dental Care</h4>
@@ -630,9 +630,9 @@
             </div>
 
             <!-- Floating Badge -->
-            <div class="absolute -bottom-6 -left-6 bg-brandBlue text-white p-3.5 rounded-2xl shadow-xl max-w-[210px]">
+            <div class="absolute -bottom-6 -left-6 bg-gradient-to-r from-brandBlue to-brandBlueDark text-white p-3.5 rounded-2xl shadow-xl max-w-[210px]">
               <div class="text-lg font-black leading-tight">Manipal Trained</div>
-              <p class="text-[11px] font-semibold text-sky-100 mt-1">BDS, FAGE (Manipal)</p>
+              <p class="text-[11px] font-semibold text-cyan-100 mt-1">BDS, FAGE (Manipal)</p>
             </div>
 
           </div>
@@ -642,13 +642,13 @@
               <i class="fa-solid fa-circle-check text-brandBlue"></i> Rotary Precision RCT
             </div>
             <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-800">
-              <i class="fa-solid fa-circle-check text-brandBlue"></i> Painless Extractions
+              <i class="fa-solid fa-circle-check text-brandRed"></i> Painless Extractions
             </div>
             <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-800">
               <i class="fa-solid fa-circle-check text-brandBlue"></i> Complete Sterilization
             </div>
             <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-800">
-              <i class="fa-solid fa-circle-check text-brandBlue"></i> Fixed Crowns & Bridges
+              <i class="fa-solid fa-circle-check text-brandRed"></i> Fixed Crowns & Bridges
             </div>
           </div>
         </div>
@@ -659,34 +659,34 @@
   </section>
 
   <!-- ================= 5. DOCTOR SPOTLIGHT SECTION ================= -->
-  <section id="doctor" class="py-20 bg-gradient-to-b from-[#eaf2fb] via-[#e2ecf7] to-[#eaf0f8] relative border-b border-slate-200">
+  <section id="doctor" class="py-20 bg-gradient-to-b from-[#eaf6fc] via-[#e2f1f7] to-[#eaf5f8] relative border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-        <span class="text-xs font-black text-brandRed uppercase tracking-widest block mb-2">Medical Leadership</span>
+        <span class="text-xs font-black text-[#65ab00] uppercase tracking-widest block mb-2">Medical Leadership</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Meet Your Dental Surgeon</h2>
         <p class="text-slate-600 text-sm mt-3">Combining premier academic training with gentle, transparent, and patient-first care.</p>
-        <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-4"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
       <!-- Doctor Profile Card -->
       <div class="max-w-3xl mx-auto glass-card doctor-gradient-card rounded-3xl p-6 sm:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-t-brandBlue reveal group">
         <div class="flex flex-col sm:flex-row items-center gap-8">
           <div class="relative shrink-0">
-            <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-tr from-brandBlue to-sky-600 text-white flex flex-col items-center justify-center shadow-lg border-2 border-brandBlue/30 group-hover:scale-105 transition-transform overflow-hidden">
+            <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-tr from-brandBlue to-brandRed text-white flex flex-col items-center justify-center shadow-lg border-2 border-brandBlue/30 group-hover:scale-105 transition-transform overflow-hidden">
               <img src="Images/3.png" alt="Dr. Mohd Yunus" class="w-full h-full object-cover" />
             </div>
-            <div class="absolute -bottom-2 -right-2 bg-brandBlue text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">
+            <div class="absolute -bottom-2 -right-2 bg-gradient-to-r from-brandBlueDark to-brandBlue text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">
               MANIPAL
             </div>
           </div>
 
           <div class="text-center sm:text-left space-y-2.5 flex-1">
-            <span class="text-xs font-bold text-brandRed tracking-wide uppercase">Dental Surgeon & Oral Health Specialist</span>
-            <h3 class="text-2xl sm:text-3xl font-black text-brandBlue">Dr. Mohd. Yunus</h3>
+            <span class="text-xs font-bold text-[#65ab00] tracking-wide uppercase">Dental Surgeon & Oral Health Specialist</span>
+            <h3 class="text-2xl sm:text-3xl font-black text-brandBlueDark">Dr. Mohd. Yunus</h3>
             <p class="text-sm font-extrabold text-slate-800">BDS (Manipal), FAGE (Manipal)</p>
-            <p class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md inline-block">
+            <p class="text-xs font-bold text-lime-900 bg-lime-100 border border-lime-300 px-2.5 py-1 rounded-md inline-block">
               Registration No.: A-12063
             </p>
             <p class="text-xs text-slate-600 leading-relaxed font-normal">
@@ -694,10 +694,10 @@
             </p>
 
             <div class="pt-2 flex flex-wrap justify-center sm:justify-start gap-1.5">
-              <span class="text-[11px] bg-sky-100 text-brandBlue px-2.5 py-0.5 rounded-full font-semibold">Microscopic RCT</span>
-              <span class="text-[11px] bg-red-100 text-brandRed px-2.5 py-0.5 rounded-full font-semibold">Painless Extractions</span>
-              <span class="text-[11px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-semibold">Crowns & Bridges</span>
-              <span class="text-[11px] bg-purple-100 text-purple-800 px-2.5 py-0.5 rounded-full font-semibold">Dental Implants</span>
+              <span class="text-[11px] bg-cyan-100 text-brandBlueDark px-2.5 py-0.5 rounded-full font-semibold">Microscopic RCT</span>
+              <span class="text-[11px] bg-lime-100 text-lime-900 px-2.5 py-0.5 rounded-full font-semibold">Painless Extractions</span>
+              <span class="text-[11px] bg-sky-100 text-sky-900 px-2.5 py-0.5 rounded-full font-semibold">Crowns & Bridges</span>
+              <span class="text-[11px] bg-emerald-100 text-emerald-900 px-2.5 py-0.5 rounded-full font-semibold">Dental Implants</span>
             </div>
           </div>
         </div>
@@ -706,7 +706,7 @@
           <div class="text-xs text-slate-600 font-semibold text-center sm:text-left">
             <i class="fa-solid fa-clock text-brandBlue mr-1"></i> Morning: 09:30 AM – 01:30 PM &nbsp;|&nbsp; Evening: 04:00 PM – 06:00 PM
           </div>
-          <a href="#contact" class="btn-shimmer inline-flex items-center gap-2 text-xs sm:text-sm font-black text-white bg-brandRed hover:bg-brandRedHover px-5 py-2.5 rounded-full transition-all shadow-md hover:scale-105">
+          <a href="#contact" class="btn-shimmer inline-flex items-center gap-2 text-xs sm:text-sm font-black text-white bg-gradient-to-r from-brandBlue to-[#009fd9] hover:from-[#00aee8] hover:to-brandBlue px-5 py-2.5 rounded-full transition-all shadow-md hover:scale-105">
             <span>Book with Dr. Yunus</span>
             <i class="fa-solid fa-chevron-right text-[10px]"></i>
           </a>
@@ -717,26 +717,26 @@
   </section>
 
   <!-- ================= 6. CATEGORIZED CLINICAL SERVICES ================= -->
-  <section id="services" class="py-20 bg-gradient-to-b from-[#f0f6fc] via-[#e7f1fb] to-[#edf4fc] relative border-b border-sky-100">
+  <section id="services" class="py-20 bg-gradient-to-b from-[#f0fafe] via-[#e7f6fc] to-[#edf7fb] relative border-b border-sky-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Title -->
       <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-        <span class="text-xs font-black text-brandBlue uppercase tracking-widest block mb-2">Comprehensive Dental Care</span>
+        <span class="text-xs font-black text-brandBlueDark uppercase tracking-widest block mb-2">Comprehensive Dental Care</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Clinical Treatments at Care Dental Clinic</h2>
         <p class="text-slate-600 text-sm mt-3">From emergency toothache relief to long-lasting full mouth rehabilitations in Rajatalab.</p>
-        <div class="w-24 h-1 bg-brandRed mx-auto rounded-full mt-4"></div>
+        <div class="w-24 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
-      <!-- Services Grid: 6 Comprehensive Categories -->
+      <!-- Services Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Category 1: Rotary RCT -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
             <i class="fa-solid fa-microscope"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlue transition-colors">Rotary Root Canal (RCT)</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlueDark transition-colors">Rotary Root Canal (RCT)</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Advanced single-sitting root canal treatment using motorized rotary files for total pain relief and infected nerve cleaning.
           </p>
@@ -749,10 +749,10 @@
 
         <!-- Category 2: Tooth Extraction -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm">
-            <i class="fa-solid fa-tooth"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-slate-950 transition-all shadow-sm">
+            <i class="fa-solid fa-tooth text-[#65ab00]"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandRed transition-colors">Painless Tooth Extractions</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-[#65ab00] transition-colors">Painless Tooth Extractions</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Gentle removal of hopelessly decayed teeth and surgically impacted wisdom teeth under comfortable local anesthesia.
           </p>
@@ -765,10 +765,10 @@
 
         <!-- Category 3: Crowns, Bridges & Implants -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
             <i class="fa-solid fa-cubes"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlue transition-colors">Fixed Teeth & Bridges</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlueDark transition-colors">Fixed Teeth & Bridges</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Replace missing teeth with natural-looking zirconia caps, metal-ceramic fixed bridges, and titanium dental implants.
           </p>
@@ -781,10 +781,10 @@
 
         <!-- Category 4: Cleaning & Pyorrhea Care -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm">
-            <i class="fa-solid fa-pump-medical"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-slate-950 transition-all shadow-sm">
+            <i class="fa-solid fa-pump-medical text-[#65ab00]"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandRed transition-colors">Teeth Cleaning & Scaling</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-[#65ab00] transition-colors">Teeth Cleaning & Scaling</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Ultrasonic calculus and stain removal to stop bleeding gums, bad breath, and loose teeth caused by pyorrhea.
           </p>
@@ -797,10 +797,10 @@
 
         <!-- Category 5: Cosmetic Dentistry -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:bg-brandBlue group-hover:text-white transition-all shadow-sm">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlue transition-colors">Smile Designing & Fillings</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandBlueDark transition-colors">Smile Designing & Fillings</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Tooth-colored composite light-cure fillings that blend invisibly with your natural enamel to seal cavities and fix gaps.
           </p>
@@ -813,10 +813,10 @@
 
         <!-- Category 6: Dentures & Geriatric Care -->
         <div class="glass-card service-gradient-card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200/90 reveal group">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-white transition-all shadow-sm">
-            <i class="fa-solid fa-teeth-open"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:bg-brandRed group-hover:text-slate-950 transition-all shadow-sm">
+            <i class="fa-solid fa-teeth-open text-[#65ab00]"></i>
           </div>
-          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-brandRed transition-colors">Complete & Partial Dentures</h3>
+          <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-[#65ab00] transition-colors">Complete & Partial Dentures</h3>
           <p class="text-slate-600 text-xs leading-relaxed mb-4">
             Comfortable, unbreakable flexible and acrylic dentures for senior citizens to restore natural chewing and facial shape.
           </p>
@@ -835,7 +835,7 @@
   <!-- ================= 7. INTERACTIVE BEFORE / AFTER SHOWCASE ================= -->
   <section id="whitening" class="py-20 bg-slate-900 text-white relative overflow-hidden">
     <div class="absolute -top-12 -left-12 w-80 h-80 bg-brandBlue/30 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-brandRed/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-brandRed/25 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -843,10 +843,10 @@
         
         <!-- Left Explainer -->
         <div class="lg:col-span-6 space-y-6 reveal">
-          <span class="text-xs font-black text-sky-400 uppercase tracking-widest block">Aesthetic Transformations</span>
+          <span class="text-xs font-black text-brandBlue uppercase tracking-widest block">Aesthetic Transformations</span>
           
           <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
-            Smile Restorations & <span class="text-red-400">Teeth Brightening</span>
+            Smile Restorations & <span class="text-brandRed">Teeth Brightening</span>
           </h2>
 
           <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -855,7 +855,7 @@
 
           <div class="space-y-4 pt-2">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-bolt text-lg"></i>
               </div>
               <div>
@@ -865,7 +865,7 @@
             </div>
 
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center shrink-0">
+              <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-gem text-lg"></i>
               </div>
               <div>
@@ -876,7 +876,7 @@
           </div>
 
           <div class="pt-4">
-            <a href="#contact" class="btn-shimmer inline-flex items-center gap-2 bg-brandRed hover:bg-brandRedHover text-white px-7 py-3 rounded-full font-bold text-sm shadow-xl hover:scale-105 transition-all">
+            <a href="#contact" class="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-brandBlue to-[#009fd9] hover:from-[#00aee8] hover:to-brandBlue text-white px-7 py-3 rounded-full font-bold text-sm shadow-xl hover:scale-105 transition-all">
               <i class="fa-solid fa-wand-magic-sparkles"></i>
               <span>Book Smile Consultation</span>
             </a>
@@ -887,7 +887,7 @@
         <div class="lg:col-span-6 reveal">
           <div class="text-center mb-3">
             <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">
-              <i class="fa-solid fa-arrows-left-right text-sky-400 mr-1"></i> Drag slider sideways to view transformation
+              <i class="fa-solid fa-arrows-left-right text-brandBlue mr-1"></i> Drag slider sideways to view transformation
             </span>
           </div>
 
@@ -895,19 +895,19 @@
             <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-xl select-none" id="twc-slider-container">
               
               <img src="Images/t2.webp" alt="After Teeth Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none" />
-              <span class="absolute top-4 right-4 z-10 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
+              <span class="absolute top-4 right-4 z-10 bg-brandRed/90 text-slate-950 text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 After
               </span>
 
               <img id="twc-before-img" src="Images/t1.webp" alt="Before Teeth Treatment" class="absolute inset-0 w-full h-full object-cover pointer-events-none filter contrast-125 sepia-[0.3]" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);" />
-              <span class="absolute top-4 left-4 z-10 bg-amber-600/90 backdrop-blur-sm text-white text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
+              <span class="absolute top-4 left-4 z-10 bg-brandBlue/90 text-slate-950 text-xs font-black px-3 py-1.5 rounded-md uppercase tracking-wider select-none">
                 Before
               </span>
 
               <div id="twc-slider-line" class="absolute top-0 bottom-0 pointer-events-none z-20" style="left: 50%;">
                 <div class="absolute inset-y-0 -left-[1.5px] w-[3px] bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"></div>
-                <div class="absolute top-1/2 -translate-y-1/2 -left-5 w-10 h-10 bg-brandRed rounded-full border-4 border-white shadow-xl flex items-center justify-center transition-colors">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <div class="absolute top-1/2 -translate-y-1/2 -left-5 w-10 h-10 bg-brandBlue rounded-full border-4 border-white shadow-xl flex items-center justify-center transition-colors">
+                  <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-4 4 4 4m8 0l4-4-4-4" />
                   </svg>
                 </div>
@@ -924,20 +924,20 @@
   </section>
 
   <!-- ================= 8. CLINIC FACILITIES & TECH ================= -->
-  <section id="facilities" class="py-20 bg-gradient-to-b from-[#eaf2fb] via-[#e2ecf7] to-[#edf4fb] relative border-b border-sky-100">
+  <section id="facilities" class="py-20 bg-gradient-to-b from-[#eaf6fb] via-[#e2f1f7] to-[#edf7fb] relative border-b border-sky-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-        <span class="text-xs font-black text-brandRed uppercase tracking-widest block mb-2">Clinical Standards</span>
+        <span class="text-xs font-black text-[#65ab00] uppercase tracking-widest block mb-2">Clinical Standards</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Facilities & Infrastructure</h2>
         <p class="text-slate-600 text-sm mt-3">Sterilized, patient-centered equipment to ensure safe, comfortable treatment every visit.</p>
-        <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-4"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-chair"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">Motorized Dental Chair</h3>
@@ -947,8 +947,8 @@
         </div>
 
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-pump-soap"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-pump-soap text-[#65ab00]"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">Multi-Tier Autoclave</h3>
           <p class="text-slate-600 text-xs leading-relaxed">
@@ -957,7 +957,7 @@
         </div>
 
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-x-ray"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">High-Def Digital Radiography</h3>
@@ -967,8 +967,8 @@
         </div>
 
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-gears"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gears text-[#65ab00]"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">Endomotor Rotary Unit</h3>
           <p class="text-slate-600 text-xs leading-relaxed">
@@ -977,7 +977,7 @@
         </div>
 
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-water"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">Piezo-Ultrasonic Scaler</h3>
@@ -987,8 +987,8 @@
         </div>
 
         <div class="equip-gradient-card rounded-2xl p-6 shadow-md border border-slate-200/90 reveal">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-headset"></i>
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-headset text-[#65ab00]"></i>
           </div>
           <h3 class="text-base font-black text-slate-900 mb-2">Direct WhatsApp & Call Desk</h3>
           <p class="text-slate-600 text-xs leading-relaxed">
@@ -1001,7 +1001,7 @@
     </div>
   </section>
 
-  <!-- ================= 9. AUTO-SLIDING CLINIC GALLERY SECTION (FULL UNCUT IMAGES) ================= -->
+  <!-- ================= 9. CLINIC GALLERY SECTION ================= -->
   <section id="gallery" class="py-20 bg-slate-950 text-white overflow-hidden relative border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -1015,43 +1015,36 @@
         <p class="text-slate-400 text-sm">
           Hygienic operatory, modern dental chair stations, digital radiography, and sterilization lounge.
         </p>
-        <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-3"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-3"></div>
       </div>
 
-      <!-- Fully Responsive Gallery Frame (Zero Image Cuts) -->
+      <!-- Gallery Frame -->
       <div id="galleryContainer" class="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-800">
         
-        <!-- Track Area with Full-Contain Logic -->
         <div class="relative w-full h-[46vh] sm:h-[58vh] lg:h-[66vh] min-h-[300px] max-h-[640px] overflow-hidden flex items-center bg-slate-950">
           
           <div id="galleryTrack" class="flex h-full w-full transition-transform duration-700 ease-in-out">
 
-            <!-- Slide 1 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/25.png" alt="Care Dental Clinic Operatory 1" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
 
-            <!-- Slide 2 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/8.png" alt="Care Dental Consultation Suite" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
 
-            <!-- Slide 3 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/5.png" alt="Clinical Treatment Equipment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
 
-            <!-- Slide 4 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/7.png" alt="Dental Operatory View" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
 
-            <!-- Slide 5 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/26.png" alt="Modern Operatory Instrumentation" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
 
-            <!-- Slide 6 -->
             <div class="min-w-full w-full h-full flex items-center justify-center p-2.5 sm:p-5 flex-shrink-0">
               <img src="Images/29.png" alt="Clean Clinic Lounge" class="max-h-full max-w-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-xl select-none">
             </div>
@@ -1065,20 +1058,16 @@
 
         </div>
 
-        <!-- Controls: Previous Button -->
+        <!-- Controls -->
         <button id="prevGallery" class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 bg-black/65 hover:bg-brandBlue text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center z-30 transition-all shadow-xl hover:scale-110 active:scale-95 border border-white/15" aria-label="Previous Slide">
           <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
         </button>
 
-        <!-- Controls: Next Button -->
         <button id="nextGallery" class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 bg-black/65 hover:bg-brandBlue text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center z-30 transition-all shadow-xl hover:scale-110 active:scale-95 border border-white/15" aria-label="Next Slide">
           <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
         </button>
 
-        <!-- Carousel Dots Indicator -->
-        <div id="galleryDots" class="w-full py-3 bg-slate-900/90 border-t border-slate-800 flex items-center justify-center gap-2">
-          <!-- Dots will be populated via JS -->
-        </div>
+        <div id="galleryDots" class="w-full py-3 bg-slate-900/90 border-t border-slate-800 flex items-center justify-center gap-2"></div>
 
       </div>
 
@@ -1086,11 +1075,11 @@
   </section>
 
   <!-- ================= 10. WHY CHOOSE US ================= -->
-  <section class="py-20 bg-gradient-to-b from-[#edf4fc] via-[#e5eef9] to-[#edf5fc] relative border-b border-sky-100">
+  <section class="py-20 bg-gradient-to-b from-[#edf7fc] via-[#e5f3f9] to-[#edf7fc] relative border-b border-sky-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-        <span class="text-xs font-black text-brandRed uppercase tracking-widest block mb-2">
+        <span class="text-xs font-black text-[#65ab00] uppercase tracking-widest block mb-2">
           The Care Dental Advantage
         </span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">
@@ -1099,13 +1088,13 @@
         <p class="text-slate-600 text-sm mt-3">
           Premier Manipal academic training, ethical medical guidance, and gentle local anesthesia protocols.
         </p>
-        <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-4"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-sky-50 to-blue-100/80 border border-sky-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-cyan-50 to-sky-100/80 border border-sky-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-user-doctor"></i>
           </div>
           <h3 class="text-lg font-bold text-slate-900 mb-2">Manipal Trained Doctor</h3>
@@ -1114,9 +1103,9 @@
           </p>
         </div>
 
-        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-rose-50 to-red-100/80 border border-red-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-star"></i>
+        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-lime-50 to-lime-100/80 border border-lime-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-star text-[#65ab00]"></i>
           </div>
           <h3 class="text-lg font-bold text-slate-900 mb-2">5.0 Star Rated Care</h3>
           <p class="text-slate-600 text-xs leading-relaxed">
@@ -1124,8 +1113,8 @@
           </p>
         </div>
 
-        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-sky-50 to-blue-100/80 border border-sky-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
-          <div class="w-12 h-12 rounded-xl bg-sky-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-cyan-50 to-sky-100/80 border border-sky-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brandBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-shield-virus"></i>
           </div>
           <h3 class="text-lg font-bold text-slate-900 mb-2">Quality Sterilization</h3>
@@ -1134,9 +1123,9 @@
           </p>
         </div>
 
-        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-rose-50 to-red-100/80 border border-red-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
+        <div class="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-white via-lime-50 to-lime-100/80 border border-lime-200/80 shadow-lg hover:-translate-y-1.5 transition-all duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-lime-100 text-brandRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-hand-holding-dollar text-[#65ab00]"></i>
           </div>
           <h3 class="text-lg font-bold text-slate-900 mb-2">Transparent Pricing</h3>
           <p class="text-slate-600 text-xs leading-relaxed">
@@ -1148,7 +1137,7 @@
     </div>
   </section>
 
-  <!-- ================= 11. AREAS SERVED / RAJATALAB & JANSA ROAD LOCAL SEO ================= -->
+  <!-- ================= 11. AREAS SERVED ================= -->
   <section id="areas-served" class="py-20 sm:py-24 relative overflow-hidden border-t border-white/10 bg-slate-950 text-white">
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute -top-24 -left-24 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-brandBlue/20 blur-[110px]"></div>
@@ -1158,7 +1147,7 @@
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-14 reveal">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-sky-400/20 bg-sky-400/10 text-sky-300 text-[10px] sm:text-xs font-black uppercase tracking-[0.25em]">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-sky-400/20 bg-sky-400/10 text-brandBlue text-[10px] sm:text-xs font-black uppercase tracking-[0.25em]">
           <i class="fa-solid fa-location-dot"></i> Local Reach
         </div>
 
@@ -1173,166 +1162,150 @@
         <div class="w-24 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-6"></div>
       </div>
 
-      <!-- 16 Exact Nearby Areas Verified on Google Maps -->
+      <!-- 16 Exact Nearby Areas -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 reveal">
 
-        <!-- 01 - Rajatalab -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Rajatalab</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Rajatalab</span>
           </div>
         </div>
 
-        <!-- 02 - Jansa Road -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Jansa Road</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Jansa Road</span>
           </div>
         </div>
 
-        <!-- 03 - Mohansarai -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Mohansarai</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Mohansarai</span>
           </div>
         </div>
 
-        <!-- 04 - Kachnar -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Kachnar</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Kachnar</span>
           </div>
         </div>
 
-        <!-- 05 - Rohaniya -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Rohaniya</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Rohaniya</span>
           </div>
         </div>
 
-        <!-- 06 - Todarpur -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Todarpur</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Todarpur</span>
           </div>
         </div>
 
-        <!-- 07 - Mirzamurad -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Mirzamurad</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Mirzamurad</span>
           </div>
         </div>
 
-        <!-- 08 - Gangapur -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Gangapur</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Gangapur</span>
           </div>
         </div>
 
-        <!-- 09 - Kapsethi -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Kapsethi</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Kapsethi</span>
           </div>
         </div>
 
-        <!-- 10 - Varanasi -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Varanasi</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Varanasi</span>
           </div>
         </div>
 
-        <!-- 11 - Birbhanpur -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Birbhanpur</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Birbhanpur</span>
           </div>
         </div>
 
-        <!-- 12 - NH-19 -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">NH-19</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">NH-19</span>
           </div>
         </div>
 
-        <!-- 13 - Mehadiganj -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Mehadiganj</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Mehadiganj</span>
           </div>
         </div>
 
-        <!-- 14 - Panchkosi Road -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-brandBlueDark hover:via-brandBlue hover:to-[#1769c2] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Panchkosi Road</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Panchkosi Road</span>
           </div>
         </div>
 
-        <!-- 15 - Bhikharipur -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-brandBlueDark hover:to-brandBlue transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-brandBlue group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Bhikharipur</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Bhikharipur</span>
           </div>
         </div>
 
-        <!-- 16 - Chunar Road -->
-        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-50 via-sky-100 to-blue-200 border border-slate-200 shadow-md hover:from-[#991b1b] hover:via-brandRed hover:to-[#ef4444] transition-all duration-300">
+        <div class="group rounded-2xl p-4 bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/80 shadow-md hover:from-[#497c00] hover:to-brandRed transition-all duration-300">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-red-100 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-lime-500/20 text-brandRed group-hover:bg-white/20 group-hover:text-white flex items-center justify-center shrink-0">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <span class="text-slate-800 group-hover:text-white font-bold text-xs sm:text-sm">Chunar Road</span>
+            <span class="text-slate-200 group-hover:text-white font-bold text-xs sm:text-sm">Chunar Road</span>
           </div>
         </div>
 
@@ -1342,7 +1315,7 @@
   </section>
 
   <!-- ================= 12. 5.0 GOOGLE REVIEWS SECTION ================= -->
-  <section id="reviews" class="py-20 relative bg-gradient-to-b from-[#e5eef7] via-[#dde8f3] to-[#e4eef8] border-b border-slate-200">
+  <section id="reviews" class="py-20 relative bg-gradient-to-b from-[#e5f4f8] via-[#ddeef4] to-[#e4f3f9] border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <div class="reveal mb-10">
@@ -1369,8 +1342,8 @@
 
       <!-- Google Profile Direct Link -->
       <div class="mt-8 reveal">
-        <a href="https://maps.google.com/?cid=3760604167175594448" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brandBlue hover:text-brandRed transition-colors bg-white px-6 py-3 rounded-full shadow-md border border-slate-200 hover:shadow-lg hover:scale-105">
-          <i class="fa-brands fa-google text-red-500"></i>
+        <a href="https://maps.google.com/?cid=3760604167175594448" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brandBlueDark hover:text-[#65ab00] transition-colors bg-white px-6 py-3 rounded-full shadow-md border border-slate-200 hover:shadow-lg hover:scale-105">
+          <i class="fa-brands fa-google text-blue-500"></i>
           <span>View Care Dental Clinic on Google Maps</span>
           <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
         </a>
@@ -1379,22 +1352,21 @@
     </div>
   </section>
 
-  <!-- ================= 13. FREQUENTLY ASKED QUESTIONS (9 COMPREHENSIVE FAQS) ================= -->
-  <section class="py-20 bg-gradient-to-b from-[#f2f7fd] via-[#e9f2fb] to-[#f0f6fc] relative border-b border-slate-200">
+  <!-- ================= 13. FREQUENTLY ASKED QUESTIONS ================= -->
+  <section class="py-20 bg-gradient-to-b from-[#f2fafd] via-[#e9f6fb] to-[#f0f9fc] relative border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-        <span class="text-xs font-black text-brandBlue uppercase tracking-widest block mb-2">Patient Guidance</span>
+        <span class="text-xs font-black text-brandBlueDark uppercase tracking-widest block mb-2">Patient Guidance</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Frequently Asked Questions</h2>
         <p class="text-slate-600 text-sm mt-2">Clear information regarding treatments, fees, and visits at Care Dental Clinic.</p>
-        <div class="w-20 h-1 bg-brandRed mx-auto rounded-full mt-4"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
       <div class="space-y-4 reveal">
         
-        <!-- FAQ 1 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>What are the exact clinic timings and is it open on Sundays?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1405,9 +1377,8 @@
           </div>
         </div>
 
-        <!-- FAQ 2 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>What are the qualifications & experience of Dr. Mohd. Yunus?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1418,9 +1389,8 @@
           </div>
         </div>
 
-        <!-- FAQ 3 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>Is Root Canal Treatment (RCT) painful at Care Dental Clinic?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1431,9 +1401,8 @@
           </div>
         </div>
 
-        <!-- FAQ 4 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>Where is the clinic located in Rajatalab?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1444,9 +1413,8 @@
           </div>
         </div>
 
-        <!-- FAQ 5 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>Can I book an appointment directly via WhatsApp?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1457,9 +1425,8 @@
           </div>
         </div>
 
-        <!-- FAQ 6 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>What is the cost of Root Canal Treatment (RCT) and dental caps?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1470,9 +1437,8 @@
           </div>
         </div>
 
-        <!-- FAQ 7 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>Do you treat restricted mouth opening caused by gutkha or paan masala?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1483,9 +1449,8 @@
           </div>
         </div>
 
-        <!-- FAQ 8 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>How long does a tooth extraction or wisdom tooth removal take?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1496,9 +1461,8 @@
           </div>
         </div>
 
-        <!-- FAQ 9 -->
         <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlue transition-colors">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brandBlueDark transition-colors">
             <span>What sterilization protocols are practiced between patients?</span>
             <i class="fa-solid fa-plus text-brandBlue transition-transform duration-300"></i>
           </button>
@@ -1515,14 +1479,14 @@
   </section>
 
   <!-- ================= 14. CONTACT & DIRECT WHATSAPP APPOINTMENT ================= -->
-  <section id="contact" class="py-20 bg-gradient-to-b from-[#e8f1fb] via-[#e2edf8] to-[#edf4fc] relative border-b border-slate-200">
+  <section id="contact" class="py-20 bg-gradient-to-b from-[#e8f5fb] via-[#e2f1f7] to-[#edf7fc] relative border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-        <span class="text-xs font-black text-brandRed uppercase tracking-widest block mb-2">Consult Today</span>
+        <span class="text-xs font-black text-[#65ab00] uppercase tracking-widest block mb-2">Consult Today</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Schedule Your Dental Visit</h2>
         <p class="text-slate-600 text-sm mt-3">Book your consultation with Dr. Mohd. Yunus via our direct WhatsApp scheduler or phone call.</p>
-        <div class="w-20 h-1 bg-brandBlue mx-auto rounded-full mt-4"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-brandBlue to-brandRed mx-auto rounded-full mt-4"></div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
@@ -1545,7 +1509,7 @@
 
             <!-- Address -->
             <div class="flex items-start gap-4 sm:gap-5">
-              <div class="w-12 h-12 rounded-2xl bg-sky-100 text-brandBlue flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-brandBlue flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div>
@@ -1561,12 +1525,12 @@
 
             <!-- Phone -->
             <div class="flex items-start gap-4 sm:gap-5">
-              <div class="w-12 h-12 rounded-2xl bg-red-100 text-brandRed flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
-                <i class="fa-solid fa-phone"></i>
+              <div class="w-12 h-12 rounded-2xl bg-lime-100 text-brandRed flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
+                <i class="fa-solid fa-phone text-[#65ab00]"></i>
               </div>
               <div>
                 <h4 class="font-black text-slate-900 text-sm sm:text-base">Direct Phone & WhatsApp</h4>
-                <p class="text-base sm:text-xl font-black text-brandBlue mt-1">
+                <p class="text-base sm:xl font-black text-brandBlueDark mt-1">
                   <a href="tel:8853739586" class="hover:underline">8853739586</a>
                 </p>
                 <p class="text-[11px] sm:text-xs text-slate-500 font-medium">
@@ -1577,7 +1541,7 @@
 
             <!-- Timings -->
             <div class="flex items-start gap-4 sm:gap-5">
-              <div class="w-12 h-12 rounded-2xl bg-sky-100 text-brandBlue flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-brandBlue flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
                 <i class="fa-regular fa-clock"></i>
               </div>
               <div>
@@ -1592,8 +1556,8 @@
 
             <!-- Doctor Regd Info -->
             <div class="flex items-start gap-4 sm:gap-5">
-              <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
-                <i class="fa-solid fa-user-doctor"></i>
+              <div class="w-12 h-12 rounded-2xl bg-lime-100 text-lime-900 flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-lg">
+                <i class="fa-solid fa-user-doctor text-[#65ab00]"></i>
               </div>
               <div>
                 <h4 class="font-black text-slate-900 text-sm sm:text-base">Consulting Surgeon</h4>
@@ -1604,7 +1568,7 @@
 
             <!-- Fast Call Button -->
             <div class="pt-2">
-              <a href="tel:8853739586" class="btn-shimmer inline-flex items-center justify-center gap-2 w-full bg-brandBlue hover:bg-brandBlueDark text-white py-3 rounded-xl font-black text-sm shadow-md hover:scale-105 transition-all">
+              <a href="tel:8853739586" class="btn-shimmer inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-brandBlue to-[#009fd9] hover:from-[#00aee8] hover:to-brandBlue text-white py-3 rounded-xl font-black text-sm shadow-md hover:scale-105 transition-all">
                 <i class="fa-solid fa-phone"></i>
                 <span>Direct Call Reception (8853739586)</span>
               </a>
@@ -1671,7 +1635,7 @@
                 <textarea id="waNotes" rows="3" placeholder="Describe swelling, sensitivity to cold/hot, loose tooth, or previous history..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue bg-white"></textarea>
               </div>
 
-              <button type="submit" class="btn-shimmer w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3.5 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/40 transition-all duration-200 flex items-center justify-center gap-2 text-base hover:scale-102">
+              <button type="submit" class="btn-shimmer w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black py-3.5 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/40 transition-all duration-200 flex items-center justify-center gap-2 text-base hover:scale-102">
                 <i class="fa-brands fa-whatsapp text-xl"></i>
                 <span>Confirm & Send via WhatsApp</span>
               </button>
@@ -1682,7 +1646,7 @@
 
       </div>
 
-      <!-- Working Google Maps Embed Section (Exact Location) -->
+      <!-- Working Google Maps Embed Section -->
       <div class="mt-16 reveal">
         <div class="text-center mb-6">
           <h3 class="text-xl font-black text-slate-900">Locate Care Dental Clinic on Google Maps</h3>
@@ -1719,7 +1683,7 @@
               <i class="fa-solid fa-tooth"></i>
             </div>
             <div>
-              <div class="text-xl font-black">CARE <span class="text-brandRed">DENTAL CLINIC</span></div>
+              <div class="text-xl font-black">CARE <span class="text-brandBlue">DENTAL</span> <span class="text-brandRed">CLINIC</span></div>
               <p class="text-[9px] tracking-widest text-slate-400 font-extrabold uppercase">Dr. Mohd. Yunus • BDS (Manipal), FAGE (Manipal)</p>
             </div>
           </div>
@@ -1735,13 +1699,13 @@
           </div>
 
           <div class="pt-2 flex items-center gap-3">
-            <a href="tel:8853739586" class="w-10 h-10 rounded-full bg-brandBlue text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Phone Call">
+            <a href="tel:8853739586" class="w-10 h-10 rounded-full bg-brandBlue text-slate-950 flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Phone Call">
               <i class="fa-solid fa-phone"></i>
             </a>
             <a href="https://wa.me/918853739586" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="WhatsApp">
               <i class="fa-brands fa-whatsapp text-lg"></i>
             </a>
-            <a href="https://maps.google.com/?cid=3760604167175594448" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Google Maps">
+            <a href="https://maps.google.com/?cid=3760604167175594448" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brandRed text-slate-950 flex items-center justify-center hover:scale-110 transition-all shadow-md" aria-label="Google Maps">
               <i class="fa-brands fa-google text-sm"></i>
             </a>
           </div>
@@ -1751,13 +1715,13 @@
         <div>
           <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">Quick Links</h4>
           <ul class="space-y-2.5 text-xs text-slate-400">
-            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
-            <li><a href="#about" class="hover:text-white transition-colors">About Clinic</a></li>
-            <li><a href="#doctor" class="hover:text-white transition-colors">Dr. Mohd. Yunus</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">All Treatments</a></li>
-            <li><a href="#facilities" class="hover:text-white transition-colors">Clinic Facilities</a></li>
-            <li><a href="#gallery" class="hover:text-white transition-colors">Photo Gallery</a></li>
-            <li><a href="#reviews" class="hover:text-white transition-colors">5.0★ Google Reviews</a></li>
+            <li><a href="#home" class="hover:text-brandBlue transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-brandBlue transition-colors">About Clinic</a></li>
+            <li><a href="#doctor" class="hover:text-brandBlue transition-colors">Dr. Mohd. Yunus</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">All Treatments</a></li>
+            <li><a href="#facilities" class="hover:text-brandBlue transition-colors">Clinic Facilities</a></li>
+            <li><a href="#gallery" class="hover:text-brandBlue transition-colors">Photo Gallery</a></li>
+            <li><a href="#reviews" class="hover:text-brandBlue transition-colors">5.0★ Google Reviews</a></li>
           </ul>
         </div>
 
@@ -1765,16 +1729,16 @@
         <div>
           <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">Treatments</h4>
           <ul class="space-y-2.5 text-xs text-slate-400">
-            <li><a href="#services" class="hover:text-white transition-colors">Rotary Root Canal (RCT)</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Painless Tooth Extraction</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Zirconia Caps & Bridges</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Ultrasonic Teeth Cleaning</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Complete Denture Set</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Restricted Mouth Opening</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Rotary Root Canal (RCT)</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Painless Tooth Extraction</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Zirconia Caps & Bridges</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Ultrasonic Teeth Cleaning</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Complete Denture Set</a></li>
+            <li><a href="#services" class="hover:text-brandBlue transition-colors">Restricted Mouth Opening</a></li>
           </ul>
         </div>
 
-        <!-- Clinic Hours & Empanelment -->
+        <!-- Clinic Hours -->
         <div>
           <h4 class="text-sm font-bold tracking-wider uppercase text-white mb-4">OPD Hours</h4>
           <div class="text-xs text-slate-400 space-y-2">
@@ -1783,11 +1747,11 @@
               <p>Morning: 09:30 AM – 01:30 PM</p>
               <p>Evening: 04:00 PM – 06:00 PM</p>
             </div>
-            <div class="pt-2 text-rose-300 font-bold">
+            <div class="pt-2 text-lime-400 font-bold">
               <p>Monday: CLOSED</p>
             </div>
             <div class="pt-3 border-t border-slate-800">
-              <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2.5 py-0.5 rounded text-[10px] font-bold block w-fit">
+              <span class="bg-cyan-500/20 text-brandBlue border border-brandBlue/30 px-2.5 py-0.5 rounded text-[10px] font-bold block w-fit">
                 5.0★ Rated Clinic
               </span>
               <p class="text-[11px] text-slate-400 mt-1">Rajatalab (Jansa Road), Varanasi.</p>
@@ -1808,7 +1772,7 @@
   <!-- ================= 16. FLOATING ACTION BUTTONS ================= -->
   
   <!-- Direct Phone Call Button (Bottom Left) -->
-  <a href="tel:8853739586" class="fixed bottom-6 left-6 z-50 bg-brandBlue hover:bg-brandBlueDark text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Call Care Dental Clinic">
+  <a href="tel:8853739586" class="fixed bottom-6 left-6 z-50 bg-gradient-to-tr from-brandBlue to-brandBlueDark text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Call Care Dental Clinic">
     <i class="fa-solid fa-phone text-xl animate-pulse"></i>
     <span class="absolute left-16 bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
       Call Now: 8853739586
@@ -1816,15 +1780,15 @@
   </a>
 
   <!-- Direct WhatsApp Button (Bottom Right) -->
-  <a href="https://wa.me/918853739586" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  <a href="https://wa.me/918853739586" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-gradient-to-tr from-emerald-500 to-brandRed text-slate-950 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group border-2 border-white" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl text-slate-900"></i>
     <span class="absolute right-16 bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
       WhatsApp Booking
     </span>
   </a>
 
   <!-- Back to Top Button -->
-  <button id="backToTop" class="fixed bottom-24 right-7 z-40 bg-slate-800/80 hover:bg-brandRed text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 text-xs" aria-label="Back to top">
+  <button id="backToTop" class="fixed bottom-24 right-7 z-40 bg-slate-800/80 hover:bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 text-xs" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
@@ -1905,7 +1869,7 @@
         }, 2800);
       }
 
-      // Fully Responsive Uncut Clinic Gallery Slider
+      // Fully Responsive Clinic Gallery Slider
       const galleryTrack = document.getElementById('galleryTrack');
       const prevGalleryBtn = document.getElementById('prevGallery');
       const nextGalleryBtn = document.getElementById('nextGallery');
@@ -1924,7 +1888,7 @@
           galleryDots.innerHTML = '';
           for (let i = 0; i < totalGalleryImages; i++) {
             const dot = document.createElement('button');
-            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-brandRed w-6' : 'bg-slate-600 hover:bg-slate-400'}`;
+            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-brandBlue w-6' : 'bg-slate-600 hover:bg-slate-400'}`;
             dot.setAttribute('aria-label', `Go to Slide ${i + 1}`);
             dot.addEventListener('click', () => {
               galleryIndex = i;
@@ -1942,7 +1906,7 @@
           if (galleryDots) {
             Array.from(galleryDots.children).forEach((dot, idx) => {
               if (idx === galleryIndex) {
-                dot.className = 'w-6 h-2.5 rounded-full bg-brandRed transition-all duration-300';
+                dot.className = 'w-6 h-2.5 rounded-full bg-brandBlue transition-all duration-300';
               } else {
                 dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-600 hover:bg-slate-400 transition-all duration-300';
               }
@@ -1979,7 +1943,6 @@
           });
         }
 
-        // Pause Auto-sliding on Hover for Desktop
         if (galleryContainer) {
           galleryContainer.addEventListener('mouseenter', () => {
             if (galleryInterval) clearInterval(galleryInterval);
@@ -2045,12 +2008,12 @@
         testContainer.innerHTML = `
           <div class="max-w-2xl mx-auto flex flex-col items-center">
             <div class="flex items-center gap-4 mb-4">
-              <div class="w-14 h-14 bg-gradient-to-br from-brandBlue to-brandRed rounded-full flex items-center justify-center text-white font-black text-2xl shadow-lg border-2 border-white">
+              <div class="w-14 h-14 bg-gradient-to-br from-brandBlue to-brandRed rounded-full flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg border-2 border-white">
                 ${t.name.charAt(0)}
               </div>
               <div class="text-left">
                 <h4 class="text-slate-900 font-black text-lg">${t.name}</h4>
-                <p class="text-xs text-emerald-700 font-bold">${t.badge}</p>
+                <p class="text-xs text-lime-900 font-bold">${t.badge}</p>
               </div>
             </div>
             <div class="flex text-amber-500 text-sm mb-3">
@@ -2128,7 +2091,7 @@
         });
       }
 
-      // Smooth Intersection Observer for Scroll Reveals
+      // Intersection Observer for Scroll Reveals
       const reveals = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries, observer) => {
