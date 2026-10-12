@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caredentalclinicvaranasi.com/sitemap.xml
